@@ -337,143 +337,143 @@ export default function Home() {
       </section>
 
       {/* ABOUT */}
-<section className="py-28 px-10 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-28 px-10 bg-gradient-to-b from-white to-gray-50">
 
-<div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-  {/* LEFT CONTENT */}
-  <div>
+          {/* LEFT CONTENT */}
+          <div>
 
-    <h2 className="text-4xl font-bold mb-6 text-gray-800">
-      About Amanrow ERP
-    </h2>
+            <h2 className="text-4xl font-bold mb-6 text-gray-800">
+              About Amanrow ERP
+            </h2>
 
-    <p className="text-gray-600 leading-relaxed mb-6">
-      Amanrow ERP is a modern cloud based enterprise platform designed to
-      simplify business operations and improve productivity across
-      organizations.
-    </p>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Amanrow ERP is a modern cloud based enterprise platform designed to
+              simplify business operations and improve productivity across
+              organizations.
+            </p>
 
-    <p className="text-gray-600 leading-relaxed mb-8">
-      Our ERP platform enables companies to manage legal operations,
-      debt collection workflows and human resource management through
-      a unified and powerful digital ecosystem.
-    </p>
+            <p className="text-gray-600 leading-relaxed mb-8">
+              Our ERP platform enables companies to manage legal operations,
+              debt collection workflows and human resource management through
+              a unified and powerful digital ecosystem.
+            </p>
 
-    <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6">
 
-      <div className="bg-white p-5 rounded-lg shadow-sm">
-        <h3 className="text-xl font-bold text-blue-600">10+</h3>
-        <p className="text-gray-500 text-sm">Enterprise Modules</p>
-      </div>
+              <div className="bg-white p-5 rounded-lg shadow-sm">
+                <h3 className="text-xl font-bold text-blue-600">10+</h3>
+                <p className="text-gray-500 text-sm">Enterprise Modules</p>
+              </div>
 
-      <div className="bg-white p-5 rounded-lg shadow-sm">
-        <h3 className="text-xl font-bold text-blue-600">100+</h3>
-        <p className="text-gray-500 text-sm">Business Workflows</p>
-      </div>
+              <div className="bg-white p-5 rounded-lg shadow-sm">
+                <h3 className="text-xl font-bold text-blue-600">100+</h3>
+                <p className="text-gray-500 text-sm">Business Workflows</p>
+              </div>
 
-      <div className="bg-white p-5 rounded-lg shadow-sm">
-        <h3 className="text-xl font-bold text-blue-600">24/7</h3>
-        <p className="text-gray-500 text-sm">Cloud Access</p>
-      </div>
+              <div className="bg-white p-5 rounded-lg shadow-sm">
+                <h3 className="text-xl font-bold text-blue-600">24/7</h3>
+                <p className="text-gray-500 text-sm">Cloud Access</p>
+              </div>
 
-      <div className="bg-white p-5 rounded-lg shadow-sm">
-        <h3 className="text-xl font-bold text-blue-600">Secure</h3>
-        <p className="text-gray-500 text-sm">Enterprise Security</p>
-      </div>
+              <div className="bg-white p-5 rounded-lg shadow-sm">
+                <h3 className="text-xl font-bold text-blue-600">Secure</h3>
+                <p className="text-gray-500 text-sm">Enterprise Security</p>
+              </div>
 
-    </div>
+            </div>
 
-  </div>
-
-
-  {/* RIGHT IMAGE */}
-  <div>
-
-    <img
-      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
-      className="rounded-xl shadow-xl"
-      alt="ERP analytics"
-    />
-
-  </div>
-
-</div>
-
-</section>
+          </div>
 
 
+          {/* RIGHT IMAGE */}
+          <div>
 
-{/* CONTACT */}
-<section id="contact" className="py-28 px-10 bg-white">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+              className="rounded-xl shadow-xl"
+              alt="ERP analytics"
+            />
 
-<div className="max-w-6xl mx-auto text-center">
+          </div>
 
-  <h2 className="text-4xl font-bold text-gray-800 mb-4">
-    Contact Us
-  </h2>
+        </div>
 
-  <p className="text-gray-500 mb-16 max-w-xl mx-auto">
-    Have questions about Amanrow ERP or want a product demo?
-    Our team is ready to help you.
-  </p>
-
-
-  <div className="grid md:grid-cols-3 gap-10">
-
-    {/* Email */}
-    <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition">
-
-      <div className="text-4xl mb-4">📧</div>
-
-      <h3 className="font-semibold mb-2">
-        Email
-      </h3>
-
-      <p className="text-gray-600">
-        contact@amanrow.com
-      </p>
-
-    </div>
+      </section>
 
 
-    {/* Phone */}
-    <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition">
 
-      <div className="text-4xl mb-4">📞</div>
+      {/* CONTACT */}
+      <section id="contact" className="py-28 px-10 bg-white">
 
-      <h3 className="font-semibold mb-2">
-        Phone
-      </h3>
+        <div className="max-w-6xl mx-auto text-center">
 
-      <p className="text-gray-600">
-        +91 XXXXXXXX
-      </p>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            Contact Us
+          </h2>
 
-    </div>
+          <p className="text-gray-500 mb-16 max-w-xl mx-auto">
+            Have questions about Amanrow ERP or want a product demo?
+            Our team is ready to help you.
+          </p>
 
 
-    {/* Office */}
-    <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition">
+          <div className="grid md:grid-cols-3 gap-10">
 
-      <div className="text-4xl mb-4">📍</div>
+            {/* Email */}
+            <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition">
 
-      <h3 className="font-semibold mb-2">
-        Office
-      </h3>
+              <div className="text-4xl mb-4">📧</div>
 
-      <p className="text-gray-600">
-        Amanrow Technologies  
-        Business Solutions
-      </p>
+              <h3 className="font-semibold mb-2">
+                Email
+              </h3>
 
-    </div>
+              <p className="text-gray-600">
+              info@itegritypro.com
+              </p>
 
-  </div>
+            </div>
 
-</div>
 
-</section>
+            {/* Phone */}
+            <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition">
+
+              <div className="text-4xl mb-4">📞</div>
+
+              <h3 className="font-semibold mb-2">
+                Phone
+              </h3>
+
+              <p className="text-gray-600">
+                +965 55825532
+              </p>
+
+            </div>
+
+
+            {/* Office */}
+            <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition">
+
+              <div className="text-4xl mb-4">📍</div>
+
+              <h3 className="font-semibold mb-2">
+                Office
+              </h3>
+
+              <p className="text-gray-600"> 
+                Ibne khaldun Street, AlFouz Complex
+                Floor 1, Office 18 Hawally, Kuwait
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
 
 
       {/* FOOTER */}
