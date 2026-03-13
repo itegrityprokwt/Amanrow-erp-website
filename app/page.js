@@ -443,7 +443,7 @@ export default function Home() {
               <div>
                 <h3 className="font-semibold text-lg">Email</h3>
                 <p className="text-gray-600">
-                  info@amanrow.com
+                info@itegritypro.com
                 </p>
               </div>
 
