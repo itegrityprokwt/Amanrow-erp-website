@@ -7,13 +7,13 @@ export default function Home() {
       {/* Navbar */}
       <header className="flex justify-between items-center px-10 py-4 border-b bg-white">
 
-      <div className="flex items-center">
-  <img
-    src="/amanrow-logo.png"
-    alt="Amanrow Logo"
-    className="h-8 w-auto"
-  />
-</div>
+        <div className="flex items-center">
+          <img
+            src="/amanrow-logo.png"
+            alt="Amanrow Logo"
+            className="h-8 w-auto"
+          />
+        </div>
 
         <nav className="flex items-center gap-8">
 
@@ -87,7 +87,7 @@ export default function Home() {
       </section>
 
       {/* SOLUTIONS */}
-      <section className="py-28 px-10 bg-white text-center">
+      <section id="solutions" className="py-28 px-10 bg-white text-center">
 
         <div className="max-w-6xl mx-auto">
 
@@ -409,81 +409,10 @@ export default function Home() {
       </section>
 
 
-
-      {/* CONTACT */}
-      {/* <section id="contact" className="py-28 px-10 bg-white">
-
-        <div className="max-w-6xl mx-auto text-center">
-
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Contact Us
-          </h2>
-
-          <p className="text-gray-500 mb-16 max-w-xl mx-auto">
-            Have questions about Amanrow ERP or want a product demo?
-            Our team is ready to help you.
-          </p>
-
-
-          <div className="grid md:grid-cols-3 gap-10">
-
-            <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition">
-
-              <div className="text-4xl mb-4">📧</div>
-
-              <h3 className="font-semibold mb-2">
-                Email
-              </h3>
-
-              <p className="text-gray-600">
-              info@itegritypro.com
-              </p>
-
-            </div>
-
-
-          
-            <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition">
-
-              <div className="text-4xl mb-4">📞</div>
-
-              <h3 className="font-semibold mb-2">
-                Phone
-              </h3>
-
-              <p className="text-gray-600">
-                +965 55825532
-              </p>
-
-            </div>
-
-
-            <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition">
-
-              <div className="text-4xl mb-4">📍</div>
-
-              <h3 className="font-semibold mb-2">
-                Office
-              </h3>
-
-              <p className="text-gray-600"> 
-                Ibne khaldun Street, AlFouz Complex
-                Floor 1, Office 18 Hawally, Kuwait
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section> */}
-
       {/* CONTACT US */}
-      <section className="py-28 px-10 bg-gray-50">
+      <section id="contact" className="py-28 px-10 bg-gray-50">
 
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
-
 
           {/* LEFT SIDE */}
           <div>

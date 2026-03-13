@@ -1,26 +1,26 @@
 // export default function DebtCollection() {
 //     return (
 //       <main className="min-h-screen bg-black text-white px-20 py-20">
-  
+
 //         <h1 className="text-5xl font-bold mb-8">
 //           Debt Collection Management
 //         </h1>
-  
+
 //         <p className="text-lg text-gray-300 max-w-3xl mb-10">
 //           Our Debt Collection Management system helps financial
 //           organizations track and manage debt recovery operations
 //           efficiently.
 //         </p>
-  
+
 //         <ul className="space-y-3 text-gray-300 text-lg">
-  
+
 //           <li>• Debt tracking dashboard</li>
 //           <li>• Customer payment monitoring</li>
 //           <li>• Collection workflow automation</li>
 //           <li>• Reports and analytics</li>
-  
+
 //         </ul>
-  
+
 //       </main>
 //     );
 //   }
@@ -44,7 +44,7 @@ export default function DebtCollection() {
             <div className="text-orange-500 text-5xl mb-6">💰</div>
 
             <h1 className="text-5xl font-bold mb-6 leading-tight">
-              Debt Collection  
+              Debt Collection
               <br />
               Management Platform
             </h1>
@@ -266,9 +266,14 @@ export default function DebtCollection() {
             recovery rates and streamline your operations.
           </p>
 
-          <button className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg text-white shadow-lg">
+          {/* <button className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg text-white shadow-lg">
             Contact Us
-          </button>
+          </button> */}
+          <Link href="/#contact">
+            <button className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg text-white shadow-lg">
+              Contact Us
+            </button>
+          </Link>
 
         </div>
 
