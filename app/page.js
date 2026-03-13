@@ -1,12 +1,19 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <main className="min-h-screen bg-white text-gray-900">
 
       {/* Navbar */}
       <header className="flex justify-between items-center px-10 py-4 border-b bg-white">
 
+        {/* Logo */}
         <div className="flex items-center">
           <img
             src="/amanrow-logo.png"
@@ -15,7 +22,9 @@ export default function Home() {
           />
         </div>
 
-        <nav className="flex items-center gap-8">
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex items-center gap-8">
 
           <a href="#solutions" className="text-gray-600 hover:text-black">
             Products
@@ -35,7 +44,36 @@ export default function Home() {
 
         </nav>
 
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-2xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
+
       </header>
+
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden bg-white border-b px-10 py-4 space-y-4">
+
+          <a href="#solutions" className="block text-gray-600">
+            Products
+          </a>
+
+          <a href="#features" className="block text-gray-600">
+            Features
+          </a>
+
+          <a href="#contact" className="block text-gray-600">
+            Contact
+          </a>
+
+        </div>
+      )}
 
 
       {/* HERO */}
@@ -52,32 +90,17 @@ export default function Home() {
             </h1>
 
             <p className="text-lg text-gray-600 mb-8 max-w-lg">
-              Amanrow ERP helps organizations manage legal operations,
-              debt collection workflows and human resource management
-              in one powerful cloud platform.
+              Amanrow ERP is a modern cloud platform that helps organizations streamline legal operations, manage debt collection workflows, and oversee human resource management — all from a single integrated system designed for efficiency, transparency, and scalable growth.
             </p>
-
-            <div className="flex gap-4">
-
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md">
-                Explore Solutions
-              </button>
-
-              <button className="border px-6 py-3 rounded-md hover:bg-gray-100">
-                Request Demo
-              </button>
-
-            </div>
-
           </div>
 
 
           <div>
 
             <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692"
-              alt="ERP dashboard"
-              className="rounded-xl shadow-xl"
+              src="/amanrow-dashboard.jpeg"
+              alt="Amanrow ERP Dashboard"
+              className="rounded-xl shadow-2xl border"
             />
 
           </div>
@@ -443,7 +466,7 @@ export default function Home() {
               <div>
                 <h3 className="font-semibold text-lg">Email</h3>
                 <p className="text-gray-600">
-                info@itegritypro.com
+                  info@itegritypro.com
                 </p>
               </div>
 
