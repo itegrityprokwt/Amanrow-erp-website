@@ -5,9 +5,15 @@ export default function Home() {
     <main className="min-h-screen bg-white text-gray-900">
 
       {/* Navbar */}
-      <header className="flex justify-between items-center px-10 py-5 border-b bg-white">
+      <header className="flex justify-between items-center px-10 py-4 border-b bg-white">
 
-        <h1 className="text-2xl font-bold">Amanrow ERP</h1>
+      <div className="flex items-center">
+  <img
+    src="/amanrow-logo.png"
+    alt="Amanrow Logo"
+    className="h-8 w-auto"
+  />
+</div>
 
         <nav className="flex items-center gap-8">
 
@@ -474,113 +480,113 @@ export default function Home() {
       </section> */}
 
       {/* CONTACT US */}
-<section className="py-28 px-10 bg-gray-50">
+      <section className="py-28 px-10 bg-gray-50">
 
-<div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
-
-
-{/* LEFT SIDE */}
-<div>
-
-<h2 className="text-4xl font-bold mb-6">
-Contact Us
-</h2>
-
-<p className="text-gray-600 mb-10">
-Talk to our experts about Amanrow ERP solutions and discover how
-our platform can help automate legal operations, debt recovery
-and human resource management.
-</p>
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
 
 
-<div className="space-y-8">
+          {/* LEFT SIDE */}
+          <div>
+
+            <h2 className="text-4xl font-bold mb-6">
+              Contact Us
+            </h2>
+
+            <p className="text-gray-600 mb-10">
+              Talk to our experts about Amanrow ERP solutions and discover how
+              our platform can help automate legal operations, debt recovery
+              and human resource management.
+            </p>
 
 
-<div>
-<h3 className="font-semibold text-lg">Office</h3>
-<p className="text-gray-600">
-Amanrow Technologies<br/>
-Kuwait City, Kuwait
-</p>
-</div>
+            <div className="space-y-8">
 
 
-<div>
-<h3 className="font-semibold text-lg">Email</h3>
-<p className="text-gray-600">
-info@amanrow.com
-</p>
-</div>
+              <div>
+                <h3 className="font-semibold text-lg">Office</h3>
+                <p className="text-gray-600">
+                  Ibne khaldun Street, AlFouz Complex
+                  Floor 1, Office 18 Hawally, Kuwait
+                </p>
+              </div>
 
 
-<div>
-<h3 className="font-semibold text-lg">Phone</h3>
-<p className="text-gray-600">
-+965 XXXXXXXX
-</p>
-</div>
+              <div>
+                <h3 className="font-semibold text-lg">Email</h3>
+                <p className="text-gray-600">
+                  info@amanrow.com
+                </p>
+              </div>
 
 
-<div>
-<h3 className="font-semibold text-lg">Working Hours</h3>
-<p className="text-gray-600">
-Sunday – Thursday<br/>
-9:00 AM – 6:00 PM
-</p>
-</div>
+              <div>
+                <h3 className="font-semibold text-lg">Phone</h3>
+                <p className="text-gray-600">
+                  +965 55825532
+                </p>
+              </div>
 
 
-</div>
-
-</div>
-
-
-
-{/* RIGHT SIDE FORM */}
-<div className="bg-white shadow-xl rounded-xl p-10">
-
-<h3 className="text-2xl font-semibold mb-6">
-Send us a Message
-</h3>
-
-<form className="space-y-5">
-
-<input
-type="text"
-placeholder="Full Name"
-className="w-full border rounded-lg px-4 py-3"
-/>
-
-<input
-type="email"
-placeholder="Email Address"
-className="w-full border rounded-lg px-4 py-3"
-/>
-
-<input
-type="text"
-placeholder="Company Name"
-className="w-full border rounded-lg px-4 py-3"
-/>
-
-<textarea
-rows="4"
-placeholder="Your Message"
-className="w-full border rounded-lg px-4 py-3"
-></textarea>
-
-<button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition w-full">
-Send Message
-</button>
-
-</form>
-
-</div>
+              <div>
+                <h3 className="font-semibold text-lg">Working Hours</h3>
+                <p className="text-gray-600">
+                  Monday – Saturday<br />
+                  9:00 AM – 6:00 PM
+                </p>
+              </div>
 
 
-</div>
+            </div>
 
-</section>
+          </div>
+
+
+
+          {/* RIGHT SIDE FORM */}
+          <div className="bg-white shadow-xl rounded-xl p-10">
+
+            <h3 className="text-2xl font-semibold mb-6">
+              Send us a Message
+            </h3>
+
+            <form className="space-y-5">
+
+              <input
+                type="text"
+                placeholder="Full Name"
+                className="w-full border rounded-lg px-4 py-3"
+              />
+
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="w-full border rounded-lg px-4 py-3"
+              />
+
+              <input
+                type="text"
+                placeholder="Company Name"
+                className="w-full border rounded-lg px-4 py-3"
+              />
+
+              <textarea
+                rows="4"
+                placeholder="Your Message"
+                className="w-full border rounded-lg px-4 py-3"
+              ></textarea>
+
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition w-full">
+                Send Message
+              </button>
+
+            </form>
+
+          </div>
+
+
+        </div>
+
+      </section>
 
 
       {/* FOOTER */}
