@@ -1111,7 +1111,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const translations = {
   en: {
@@ -1264,8 +1264,13 @@ const translations = {
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+
   const [lang, setLang] = useState("en");
 
+  useEffect(() => {
+    const saved = localStorage.getItem("lang");
+    if (saved) setLang(saved);
+  }, []);
   const t = translations[lang];
   const isAr = lang === "ar";
   const dir = isAr ? "rtl" : "ltr";
@@ -1302,15 +1307,25 @@ export default function Home() {
 
           {/* Language Toggle */}
           <button
-            onClick={() => setLang(lang === "en" ? "ar" : "en")}
+            // onClick={() => setLang(lang === "en" ? "ar" : "en")}
+            onClick={() => {
+              const newLang = lang === "en" ? "ar" : "en";
+              setLang(newLang);
+              localStorage.setItem("lang", newLang);
+            }}
             className="border border-gray-300 text-gray-700 hover:bg-gray-100 px-4 py-2 rounded-md text-sm font-medium"
           >
             {lang === "en" ? "العربية" : "English"}
           </button>
 
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md">
+          {/* <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md">
             {t.nav.login}
-          </button>
+          </button> */}
+          <a href="https://app.amanrow.com/" target="_blank" rel="noopener noreferrer">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md">
+              {t.nav.login}
+            </button>
+          </a>
 
         </nav>
 
@@ -1485,48 +1500,6 @@ export default function Home() {
                 <p className="text-gray-600">{card.desc}</p>
               </div>
             ))}
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* ABOUT */}
-      <section className="py-28 px-10 bg-gradient-to-b from-white to-gray-50">
-
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-
-          <div>
-
-            <h2 className="text-4xl font-bold mb-6 text-gray-800">
-              {t.about.heading}
-            </h2>
-
-            <p className="text-gray-600 leading-relaxed mb-6">
-              {t.about.p1}
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mb-8">
-              {t.about.p2}
-            </p>
-
-            <div className="grid grid-cols-2 gap-6">
-              {t.about.stats.map((stat, i) => (
-                <div key={i} className="bg-white p-5 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-bold text-blue-600">{stat.value}</h3>
-                  <p className="text-gray-500 text-sm">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-
-          </div>
-
-          <div>
-            <img
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
-              className="rounded-xl shadow-xl"
-              alt="ERP analytics"
-            />
           </div>
 
         </div>
