@@ -643,9 +643,6 @@ export default function Lawcase() {
                     </li>
                   ))}
                 </ul>
-                {/* <button className="w-full bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300">
-                  {t.pricing.buyNow}
-                </button> */}
                 <button
                   onClick={() => {
                     if (packageData) {
