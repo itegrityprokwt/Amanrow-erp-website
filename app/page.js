@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -154,10 +155,6 @@ const translations = {
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [company, setCompany] = useState("");
-  const [message, setMessage] = useState("");
 
   const [lang, setLang] = useState("en");
 
@@ -165,36 +162,6 @@ export default function Home() {
     const saved = localStorage.getItem("lang");
     if (saved) setLang(saved);
   }, []);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        company,
-        message,
-      }),
-    });
-
-    const data = await res.json();
-
-    if (data.success) {
-      alert("Message sent ✅");
-      setName("");
-      setEmail("");
-      setCompany("");
-      setMessage("");
-    } else {
-      alert("Error ❌");
-    }
-  };
-
   const t = translations[lang];
   const isAr = lang === "ar";
   const dir = isAr ? "rtl" : "ltr";
@@ -481,7 +448,7 @@ export default function Home() {
               {t.contact.formTitle}
             </h3>
 
-            {/* <form className="space-y-5">
+            <form className="space-y-5">
 
               <input
                 type="text"
@@ -508,52 +475,6 @@ export default function Home() {
               ></textarea>
 
               <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition w-full">
-                {t.contact.send}
-              </button>
-
-            </form> */}
-
-            <form onSubmit={handleSubmit} className="space-y-5">
-
-              <input
-                type="text"
-                placeholder={t.contact.name}
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="w-full border rounded-lg px-4 py-3"
-                required
-              />
-
-              <input
-                type="email"
-                placeholder={t.contact.emailPlaceholder}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full border rounded-lg px-4 py-3"
-                required
-              />
-
-              <input
-                type="text"
-                placeholder={t.contact.company}
-                value={company}
-                onChange={(e) => setCompany(e.target.value)}
-                className="w-full border rounded-lg px-4 py-3"
-              />
-
-              <textarea
-                rows="4"
-                placeholder={t.contact.message}
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                className="w-full border rounded-lg px-4 py-3"
-                required
-              ></textarea>
-
-              <button
-                type="submit"
-                className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition w-full"
-              >
                 {t.contact.send}
               </button>
 
