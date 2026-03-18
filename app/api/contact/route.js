@@ -8,7 +8,7 @@ export async function POST(req) {
   try {
     await resend.emails.send({
       from: "Amanrow ERP <support@itegritypro.com>",
-      to: "irshatha908@gmail.com",
+      to: "irsatechpro@gmail.com",
       subject: `New Contact Form Message from ${name}`,
       replyTo: email,
       html: `

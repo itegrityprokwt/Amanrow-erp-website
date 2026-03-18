@@ -847,9 +847,30 @@ export default function Home() {
             <h3 className="text-2xl font-semibold mb-6">{t.contact.formTitle}</h3>
 
             {sent ? (
-              <div className="text-green-600 font-medium text-lg py-10 text-center">
-                {t.contact.success}
-              </div>
+  <div className="py-6 text-center">
+    <div className="w-20 h-20 mx-auto mb-6">
+      <svg viewBox="0 0 80 80" fill="none">
+        <circle cx="40" cy="40" r="38" fill="#EAF3DE" stroke="#639922" strokeWidth="1.5"/>
+        <polyline points="22,41 35,54 58,28" stroke="#3B6D11" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    </div>
+    <h3 className="text-xl font-semibold text-gray-800 mb-2">Thank you for reaching out!</h3>
+    <p className="text-gray-500 mb-6 text-sm leading-relaxed">Your message has been received. Our team will get back to you within 1 business day.</p>
+    <div className="flex justify-center gap-6 mb-6">
+      <div className="text-center">
+        <div className="w-11 h-11 rounded-full bg-blue-50 flex items-center justify-center mx-auto mb-2">📧</div>
+        <p className="text-xs text-gray-400">Email sent</p>
+      </div>
+      <div className="text-center">
+        <div className="w-11 h-11 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-2">📞</div>
+        <p className="text-xs text-gray-400">Team notified</p>
+      </div>
+      <div className="text-center">
+        <div className="w-11 h-11 rounded-full bg-orange-50 flex items-center justify-center mx-auto mb-2">⏰</div>
+        <p className="text-xs text-gray-400">Reply within 1 day</p>
+      </div>
+    </div>
+  </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
                 <input
