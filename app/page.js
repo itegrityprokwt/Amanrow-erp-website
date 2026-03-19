@@ -751,17 +751,12 @@ export default function Home() {
       <section className="bg-gray-50 py-20 px-10">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12">
           <div>
-            {/* <h1 className="text-5xl font-bold leading-tight mb-6">
-              {t.hero.title1}<br />{t.hero.title2}
-            </h1> */}
             <h1 className="text-3xl font-bold leading-tight mb-6">
               {t.hero.title1} {t.hero.title2}
             </h1>
-            {/* <p className="text-lg text-gray-600 mb-8 max-w-lg">{t.hero.desc}</p> */}
             <p className="text-lg text-gray-600 mb-8 max-w-lg whitespace-pre-line">{t.hero.desc}</p>
           </div>
           <div>
-            {/* <img src="/amanrow-dashboard.jpeg" alt="Amanrow ERP Dashboard" className="rounded-xl shadow-2xl border" /> */}
             <img src="/amanrow-landing.jpeg" alt="Amanrow ERP Dashboard" className="rounded-xl w-full h-full object-cover" />
           </div>
         </div>
